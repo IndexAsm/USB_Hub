@@ -65,12 +65,14 @@ It a 4-layer board. It's mostly finished but I'll have to double check everythin
 **Total time spent: 150min**
 
 
-## Oct 7, 2026: Cleanup and maintenance
+## Oct 9, 2026: Cleanup and maintenance
 
 I made sure that everything is finished.
 
 I also generated gerbers, exported BOM and made a nice readme.
 
 Schematic is now organized too.
+
+![Schematic](img/013.png)
 
 **Total time spent: 30min**
