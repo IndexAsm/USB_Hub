@@ -3,7 +3,7 @@ title: "USB Hub"
 github: "your repo"
 description: "This project is a USB hub to get more ports in a PC";
 created_at: "2026-10-07"
-total_time: "3h"
+total_time: "3.5h"
 ---
 
 
@@ -63,3 +63,14 @@ It a 4-layer board. It's mostly finished but I'll have to double check everythin
 ![PCB 3D](img/009.png)
 
 **Total time spent: 150min**
+
+
+## Oct 7, 2026: Cleanup and maintenance
+
+I made sure that everything is finished.
+
+I also generated gerbers, exported BOM and made a nice readme.
+
+Schematic is now organized too.
+
+**Total time spent: 30min**
