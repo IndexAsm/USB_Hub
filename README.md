@@ -1,0 +1,52 @@
+# USB Hub
+
+## Overview
+A 4 port USB Hub.
+
+## USB Version
+It support USB 2.0 and older
+
+## Max Current
+It can supply up to 500mA per port <b>only when powered from USB-C compatible supply</b>. If the host port is connected to USB-A via USB-A USB-C cable it will only supply 100mA per port, to not exceed 500mA total.
+
+
+## Hardware
+
+
+It has a USB-C input and 4 USB-A output ports. Every port has ESD protection.
+![Ports schematic](img/002.png)
+
+
+It uses USB2514 as the main IC.
+
+
+![IC schematic](img/010.png)
+
+
+Everything is placed on a 4-layer board.
+
+![PCB](img/011.png)
+
+![PCB 3D](img/012.png)
+
+
+## BOM
+
+| Reference                                                                | Qty | Value            | Link                                                                                             | Footprint                                              |
+|--------------------------------------------------------------------------|-----|------------------|--------------------------------------------------------------------------------------------------|--------------------------------------------------------|
+| C1,C3,C4,C6,C7,C8,C9,C10,C11,C12,C13,C17,C18,C22,C23,C24,C25,C28,C29,C44 | 20  | 100n             |                                                                                                  | Capacitor_SMD:C_0603_1608Metric                        |
+| C2,C5,C14,C15,C16,C19,C20,C21,C30                                        | 9   | 2u2              |                                                                                                  | Capacitor_SMD:C_0603_1608Metric                        |
+| C34,C35                                                                  | 2   | 8p               | https://www.tme.eu/pl/details/cga3e2c0g1h080daa/kondensatory-mlcc-smd/tdk/cga3e2c0g1h080d080aa/  | Capacitor_SMD:C_0603_1608Metric                        |
+| C57,C58                                                                  | 2   | 22u              | https://www.tme.eu/pl/details/grm31cr61e226ke15l/kondensatory-mlcc-smd/murata/                   | Capacitor_SMD:C_1206_3216Metric                        |
+| J1,J2,J3,J4                                                              | 4   | USB_A            |                                                                                                  | USB-A-S-X-X-VT:USB-A-S-X-X-VT                          |
+| J12                                                                      | 1   | USB4105-GF-A-120 | https://www.tme.eu/pl/details/usb4105-gf-a-120/zlacza-usb-i-ieee1394/gct/                        | Connector_USB:USB_C_Receptacle_G-Switch_GT-USB-7010ASV |
+| R1,R2,R3,R4,R5,R6,R7,R8,R9,R10,R11                                       | 11  | 100k             |                                                                                                  | Resistor_SMD:R_0603_1608Metric                         |
+| R12                                                                      | 1   | 12k              |                                                                                                  | Resistor_SMD:R_0603_1608Metric                         |
+| R33,R34                                                                  | 2   | 5k1              |                                                                                                  | Resistor_SMD:R_0603_1608Metric                         |
+| R36                                                                      | 1   | 1M               |                                                                                                  | Resistor_SMD:R_0603_1608Metric                         |
+| U1                                                                       | 1   | USB2514B_Bi      | https://www.tme.eu/pl/details/usb2514b-aezc/uklady-scalone-interfejs-usb/microchip-technology/   | Package_DFN_QFN:QFN-36-1EP_6x6mm_P0.5mm_EP3.7x3.7mm    |
+| U2,U3                                                                    | 2   | MIC2026-1xM      | https://www.tme.eu/pl/details/mic2026-1ym/power-switches-uklady-scalone/microchip-technology/    | Package_SO:SOIC-8_3.9x4.9mm_P1.27mm                    |
+| U4,U5,U6,U7,U8                                                           | 5   | USBLC6-2SC6      |                                                                                                  | Package_TO_SOT_SMD:SOT-23-6                            |
+| U9                                                                       | 1   | AMS1117-3.3      |                                                                                                  | Package_TO_SOT_SMD:SOT-223-3_TabPin2                   |
+| Y1                                                                       | 1   | Crystal_GND24    | https://www.tme.eu/pl/en/details/3225-24m-sr/resonators-and-generators/sr-passives/wtl3m23500rh/ | Crystal:Crystal_SMD_EuroQuartz_MT-4Pin_3.2x2.5mm       |
+| PCB                                                                      | 1   |                  | https://jlcpcb.com/                                                                              |                                                        |
